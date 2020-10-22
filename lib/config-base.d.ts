@@ -79,6 +79,12 @@ export interface HTTPOptions {
      * Defaults to false.
      */
     xhrWithCredentials?: boolean;
+    /**
+     * Sets the 'responseType' property of an XMLHttpRequest object.
+     * Used in the browser environment only.
+     * Defaults to arraybuffer.
+     */
+    xhrResponseType?: string;
 }
 export interface Logger {
     write?: (chunk: any, encoding?: string, callback?: () => void) => void
